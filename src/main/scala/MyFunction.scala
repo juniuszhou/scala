@@ -6,5 +6,7 @@ object MyFunction{
     val i = 1
     funcWithoutResult(i)
     funcWithResult(i)
+
+
   }
 }

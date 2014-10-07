@@ -1,6 +1,7 @@
 object DataType{
   def main(args: Array[String]) {
     val i:Int=0
+    val l:Long=0L
     val d:Double=0.0
     val b:Boolean=true
     val f:Float=0.0f
