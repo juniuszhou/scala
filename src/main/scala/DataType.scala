@@ -16,7 +16,9 @@ object DataType{
     val five=5
     println(five.+(5))
 
-
+    //range
+    val ran = (0 to 20 by 2)
+    //ran.
 
     //Tuple
     val tup=(1,2)

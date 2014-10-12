@@ -10,6 +10,17 @@ object MyList{
       case None => println("Nothing")
     }
 
+    //
+    l.foreach(println)
+
+    println(l.take(3))
+
+    val list=List(1 to 20 by 2)
+    val list1=list++List(21,22)
+    println("list1="+list1)
+    val list2=22+:21+:list
+    println("list2="+list2)
+
 
   }
 }
