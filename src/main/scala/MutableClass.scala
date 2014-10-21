@@ -9,6 +9,7 @@ object MutableClass{
     override def toString = {x.toString + " and " + y}
   }
   def main (args: Array[String]) {
+    //mmc as reference is immutable but object is mutable.
     val mmc = new MyMutableClass
     println(mmc.toString)
     mmc.Double
