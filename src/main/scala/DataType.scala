@@ -12,6 +12,10 @@ object DataType{
     val a:Any=null
     val ar:AnyRef=null
 
+    //map
+    val mp = 1 -> 'a'
+    println(mp._1 + mp._2)
+
     //all operator in scala implemented as method
     val five=5
     println(five.+(5))
