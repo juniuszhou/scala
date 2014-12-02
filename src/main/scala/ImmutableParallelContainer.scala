@@ -10,6 +10,10 @@ object ImmutableParallelContainer{
     println(phm.isParIterable)
 
     //ParHashSet
+    val phs = new ParHashSet[Int]()
+    val phs2 = ParHashSet(1,2,3)
+    phs.take(0)
+    phs2.contains(2)
 
   }
 }

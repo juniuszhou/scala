@@ -10,8 +10,23 @@ object MyList{
       case None => println("Nothing")
     }
 
-    //
-    l.foreach(println)
+    // difference of foreach and map
+    println("---------------------difference of foreach and map---------------------")
+    val l2: List[Int] = 1 :: 2 :: Nil
+    val l3 = l2.foreach(_ + 2)
+    // foreach just apply a func to each item, got nothing
+    println(l3.getClass.toString)
+    // map apply func to each item, then return a give size list. each item is
+    // the result of apply func to one item.
+    val l4 = l2.map(_+2)
+    l4.map(println)
+
+    // junius so the point is if just print all items of a list. of course, the foreach
+    // much faster then map. if you need generate a list result map is the choice.
+
+    // iterator just for once.
+    val l5: List[Int] = 1 :: 2 :: Nil
+    l5.iterator.foreach(println)
 
     println(l.take(3))
 

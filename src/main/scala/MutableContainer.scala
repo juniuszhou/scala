@@ -1,6 +1,21 @@
+import scala.collection.mutable
 import scala.collection.mutable._
 object MutableContainer{
   def main (args: Array[String]) {
+
+    // val arm = AnyRefMap[Int](1 -> '1')
+
+    // ArrayBuffer implemented in an array.
+    println("---------------------ArrayBuffer-----------------------")
+    val ab = ArrayBuffer(1,2,3)
+    ab.append(4,5,6)
+
+    // ArraySeq
+    val as = ArrayStack(1,2,3)
+    as.push(4)
+
+    //
+
     println("---------------------stack-----------------------")
     val stck = Stack(1,2,3)
     stck.push(4)
@@ -17,10 +32,18 @@ object MutableContainer{
     buf2 += 1
 
     // StringBuilders
+    println("---------------------StringBuilder-----------------------")
     val buf3 = new StringBuilder
     buf3 += 'a'
 
     //Linked Lists
+    val buf4 = new mutable.LinkedList[Int]()
+    val buf5 = mutable.LinkedList(1,2,3)
+    buf5.append(LinkedList(4,5,6))
+    val b = buf5.forall(i => i > 4)
+    println(b)
+
+
 
     //Double Linked Lists
 

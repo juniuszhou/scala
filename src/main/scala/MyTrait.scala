@@ -1,3 +1,9 @@
+// similar with sealed class, all sub trait and class must define
+// in the same source file.
+sealed trait MySealedTrait{
+
+}
+
 abstract class MyLog{
   def log
 }

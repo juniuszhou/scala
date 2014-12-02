@@ -9,5 +9,15 @@ object StringOps{
 
     val str = "baidu"
     println(str)
+
+    // init get all character of a string except last one.
+    println(str.init)
+
+    // replace via functional way
+    def fix(s: String) = s.replace('b', '*').replaceFirst("c$", "#")
+
+    def fix2(s: String) = Some(s.replace('b', '*')).map(s => if (s.endsWith("c")) s.init + "#" else s).get
+
+
   }
 }

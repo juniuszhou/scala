@@ -10,6 +10,17 @@ abstract class MyAbstractClass{
   def a
 }
 
+// sealed abstract means the sub class must define in the same scala
+// file with it.
+sealed abstract class MySealedAbstractClass{
+
+}
+
+// invalid if move ImplementedClass to other source file
+class ImplementedClass extends MySealedAbstractClass{
+
+}
+
 object MyClass{
   def staticMethod = {println("static method")}
   def main (args: Array[String]) {

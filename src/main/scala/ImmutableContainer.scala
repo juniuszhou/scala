@@ -1,4 +1,6 @@
-import scala.collection.immutable._
+import scala.collection.immutable.List
+import scala.collection.immutable.Vector
+import scala.collection.immutable
 
 object ImmutableContainer{
   def main (args: Array[String]) {
@@ -44,7 +46,7 @@ object ImmutableContainer{
 
     //stack
     println("---------------------stack-----------------------")
-    val stk = Stack(1,2)
+    val stk = immutable.Stack(1,2)
     stk.push(3)
     stk.foreach(println)
     val stk2 = stk.tail
@@ -54,7 +56,7 @@ object ImmutableContainer{
 
     println("---------------------queue-----------------------")
     //queue
-    val qu = Queue(1,2,3)
+    val qu = immutable.Queue(1,2,3)
     qu.apply(0)
     qu.find(i => i > 2)
     qu.front
@@ -63,13 +65,13 @@ object ImmutableContainer{
     //red black tree
     println("---------------------red black tree-----------------------")
     //tree set implemented in red black tree
-    val ts = TreeSet(1,2,3)
+    val ts = immutable.TreeSet(1,2,3)
     println(ts.firstKey)
 
 
     //tree map implemented in red black tree
     println("---------------------tree map-----------------------")
-    val tm = TreeMap(1 -> 'a', 2 -> 'b')
+    val tm = immutable.TreeMap(1 -> 'a', 2 -> 'b')
     tm.foreach(item => println(item._1.toString + item._2))
 
 
@@ -85,20 +87,20 @@ object ImmutableContainer{
 
     //hash map implemented in hash trie
     println("---------------------hash map-----------------------")
-    val hm = HashMap(1 -> 'a', 2 -> 'b')
+    val hm = immutable.HashMap(1 -> 'a', 2 -> 'b')
     hm.foreach(println)
 
     //hash set implemented in hash trie
     println("---------------------hash set-----------------------")
-    val hs = HashSet(1,2,3)
+    val hs = immutable.HashSet(1,2,3)
     hs.foreach(println)
 
     //list map, implemented in an array. low efficient except frequently get the first item.
-    val lmp = ListMap(1 -> 'a', 2 -> 'b')
+    val lmp = immutable.ListMap(1 -> 'a', 2 -> 'b')
     println(lmp.get(1))
 
     //bit set, implemented in an array of 64-bit Longs.
-    val bs = BitSet(1024)
+    val bs = immutable.BitSet(1024)
     println(bs.firstKey)
   }
 }
