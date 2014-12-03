@@ -1,6 +1,7 @@
-import scala.collection.immutable.List
-import scala.collection.immutable.Vector
+package Datatype
+
 import scala.collection.immutable
+import scala.collection.immutable.{List, Vector}
 
 object ImmutableContainer{
   def main (args: Array[String]) {

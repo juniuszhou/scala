@@ -1,3 +1,5 @@
+package Datatype
+
 import scala.collection.parallel.immutable._
 
 object ImmutableParallelContainer{

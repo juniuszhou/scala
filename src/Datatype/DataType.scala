@@ -1,3 +1,5 @@
+package Datatype
+
 object DataType{
   def main(args: Array[String]) {
     val i:Int=0
