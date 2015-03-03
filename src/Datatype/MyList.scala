@@ -30,6 +30,11 @@ object MyList{
 
     println(l.take(3))
 
+    // flatmap usage
+    val l6 = List(1, 2, 3)
+    l6.flatMap(i => (0 to i)).foreach(j => print(j.toString + " "))
+    println()
+
     val list=List(1 to 20 by 2)
     val list1=list++List(21,22)
     println("list1="+list1)

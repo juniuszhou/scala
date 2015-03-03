@@ -30,5 +30,10 @@ object DataType{
     val tup=(1,2)
     tup._1 + tup._2
     println("hello world")
+
+    // time unit
+    import scala.concurrent.duration._
+    val fiveSeconds = 5 seconds
+
   }
 }
