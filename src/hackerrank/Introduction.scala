@@ -1,21 +1,50 @@
 package hackerrank
 
+import scala.collection.mutable
+
 /**
  * Created by junius on 15-3-3.
  */
 object Introduction {
+  case class pair (val value: Int, val index: Int){
+    def > (other: pair): Boolean = other.value > value || (other.value == value && other.index > index)
+    def == (other: pair): Boolean = other.value == value && other.index == index
+    def < (other: pair): Boolean = other.value < value || (other.value == value && other.index > index)
+  }
+  def quickSort(arr: Array[pair]) : Array[pair] = {
+    if (arr.length <= 0) arr
 
-  def f(x: Float):Float={
-    def comp(i: Int, f: Float): Float ={
-      if(i == 9) return f * x / i.toFloat
-      else f * x / i.toFloat + comp(i + 1, f * x / i.toFloat)
+    else {
+      val pivot = arr(arr.length / 2)
+      Array.concat(quickSort(arr.filter(pivot >)), arr.filter(pivot ==), arr.filter(pivot <))
     }
-    (Math.round((comp(1, 1.0F) + 1) * 10000) / 10000.0).toFloat
+
   }
 
   def main(args: Array[String]){
-    println(f(5.0F))
-    //println(f2(2.0F))
-    println(Math.exp(5))
+    val str: Array[String] = readLine().split(" ")
+    val (n, q) = (str(0).toInt, str(1).toInt)
+
+    val str2: Array[String] = readLine().split(" ")
+    val cur = new Array[Int](str2.length)
+    (0 until str2.length).foreach(i => cur(i) = str2(i).toInt)
+
+
+    val str3 : Array[String] = readLine().split(" ")
+    val day = new Array[Int](str3.length)
+    (0 until str2.length).foreach(i => day(i) = str3(i).toInt)
+
+    (0 until q).foreach(i => {
+      val which = readLine().toInt
+      var j = 0
+      var max = cur(j) + which * day(j)
+      (1 until n).foreach( nn => {
+        if(max <= (cur(nn) + which * day(nn))) {
+          max = cur(nn) + which * day(nn)
+          j = nn
+        }
+      })
+      println(j + 1)
+    })
   }
 }
