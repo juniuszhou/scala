@@ -1,10 +1,5 @@
 package hackerrank
 
-import scala.collection.mutable
-
-/**
- * Created by junius on 15-3-3.
- */
 object Introduction {
   case class pair (val value: Int, val index: Int){
     def > (other: pair): Boolean = other.value > value || (other.value == value && other.index > index)

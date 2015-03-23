@@ -10,7 +10,6 @@ object ScalaInputOutput {
   }
   def main (args: Array[String]) {
     outputEachLine()
-    return
     var ok: Boolean = true
     while (ok) {
       val ln = readLine()
@@ -18,5 +17,4 @@ object ScalaInputOutput {
       if (ok) println(ln)
     }
   }
-
 }
