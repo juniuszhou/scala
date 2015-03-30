@@ -2,9 +2,9 @@
   <library name="scala-sdk" type="Scala">
     <properties>
       <compiler-classpath>
-        <root url="file://C:/usr/lib/scala/scala-2.10.4/lib/scala-compiler.jar" />
-        <root url="file://C:/usr/lib/scala/scala-2.10.4/lib/scala-library.jar" />
-        <root url="file://C:/usr/lib/scala/scala-2.10.4/lib/scala-reflect.jar" />
+        <root url="file://$USER_HOME$/C:/usr/lib/scala/scala-2.10.4/lib/scala-compiler.jar" />
+        <root url="file://$USER_HOME$/C:/usr/lib/scala/scala-2.10.4/lib/scala-library.jar" />
+        <root url="file://$USER_HOME$/C:/usr/lib/scala/scala-2.10.4/lib/scala-reflect.jar" />
       </compiler-classpath>
     </properties>
     <CLASSES>
