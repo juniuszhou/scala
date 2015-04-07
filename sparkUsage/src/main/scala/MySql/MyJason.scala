@@ -22,7 +22,7 @@ object MyJason {
       """{"name":"Yin","address":{"city":"Columbus","state":"Ohio"}}""" :: Nil)
     val anotherPeople = sqlContext.jsonRDD(anotherPeopleRDD)
     anotherPeople.registerTempTable("other people")
-    println(anotherPeople.schemaString)
+    println(anotherPeople.toString())
     anotherPeople.map(println).count()
     sc.stop
   }

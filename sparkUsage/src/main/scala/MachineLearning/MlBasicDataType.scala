@@ -1,18 +1,15 @@
 package MachineLearning
 
-import breeze.collection.mutable.SparseArray
-import breeze.linalg.DenseVector
+//import breeze.collection.mutable.SparseArray
+//import breeze.linalg.DenseVector
 import org.apache.spark.mllib.linalg.{DenseMatrix, Vectors, SparseVector}
 import org.apache.spark.mllib.regression.LabeledPoint
 
-/**
- * Created by junius on 14-11-17.
- */
 object MlBasicDataType {
   def main (args: Array[String]) {
     // the basic data type from breeze.
     // val numRows : scala.Int, val numCols : scala.Int, val values : scala.Array[scala.Double]
-    val indexArray = Array(1,2,3,4,5,6)
+    /*val indexArray = Array(1,2,3,4,5,6)
     val dataArray = Array(1.0,2.0,3.0,4.0,5.0,6.0)
 
     // dense matrix and not init it. just give the dimension.
@@ -39,6 +36,7 @@ object MlBasicDataType {
     val pos: LabeledPoint = LabeledPoint(1.0, Vectors.dense(0, 1, 2))
 
     // dense matrix defined in mllib
-    val dm: DenseMatrix = new DenseMatrix(2, 3, dataArray)
+    val dm: DenseMatrix = new DenseMatrix(2, 3, dataArray)*/
+
   }
 }

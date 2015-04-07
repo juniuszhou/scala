@@ -17,8 +17,8 @@ object MyParquet {
   // seems there is connection between case class and Product.
   //here path is a directory of Parquet.
   def SaveRDDAsParquet[A <: Product: TypeTag](rdd: RDD[A], path: String, sqlContext: SQLContext) = {
-    import sqlContext.createSchemaRDD
-    rdd.saveAsParquetFile(path)
+    import sqlContext._
+    // rdd.saveAsParquetFile(path)
 
   }
 
@@ -26,7 +26,7 @@ object MyParquet {
   def ReadRDDFromParquet(sqlContext: SQLContext) = {
     val path = "/home/junius/develop/spark-1.2.0/examples/src/main/resources/users.parquet"
     val people = sqlContext.parquetFile(path)
-    println(people.schemaString)
+    println(people.toString())
 
     people.registerTempTable("people")
   }

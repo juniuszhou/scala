@@ -5,7 +5,7 @@ import org.apache.spark.sql.catalyst.{SqlLexical, SqlParser}
 object MySqlParserUsage {
   def main (args: Array[String]) {
 
-    val lexical = new SqlLexical(Seq()) // Seq("SELECT", "FROM"))
+    val lexical = new SqlLexical() // Seq("SELECT", "FROM"))
     // val lexical = new StdLexical()  // can't deal with character like +
     var scanner = new lexical.Scanner("SELECT name, c1+c2, id FROM records")
 

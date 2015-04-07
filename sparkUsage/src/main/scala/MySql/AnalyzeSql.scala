@@ -16,7 +16,7 @@ object AnalyzeSql {
     TableGenerator.GenerateTable(sc, catalog)
 
 
-    val functionRegistry: FunctionRegistry = new SimpleFunctionRegistry
+    val functionRegistry: FunctionRegistry = new SimpleFunctionRegistry(false)
     val analyzer = new Analyzer(catalog, functionRegistry, caseSensitive = true)
     val parser = new catalyst.SqlParser
     val sqlText = "SELECT * FROM MyRecords"

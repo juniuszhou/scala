@@ -17,13 +17,13 @@ object firstSparkSql {
     val rdd = sqlContext.sql("SELECT id, name FROM MyRecords")
 
     // where order by
-    rdd.where('id === "junius").orderBy('id.asc).printSchema()
+    //rdd.where('id === "junius").orderBy('id.asc).printSchema()
 
     // rdd.printSchema()
 
   }
 
-  def GetRDDFromSql(sqlContext: SQLContext) : RDD[_]= {
+  def GetRDDFromSql(sqlContext: SQLContext) : DataFrame= {
     // or we can import sqlContext._ then we can use sql without domain name.
     val rdd = sqlContext.sql("SELECT * FROM MyNumberPairs")
     rdd.foreach(println)

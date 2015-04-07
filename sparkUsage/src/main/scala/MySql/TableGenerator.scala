@@ -4,6 +4,7 @@ import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql._
 import org.apache.spark.sql.catalyst.analysis.Catalog
+import org.apache.spark.sql.types.{StringType, IntegerType, StructField, StructType}
 
 import scala.util.Random
 
@@ -18,7 +19,7 @@ object MyRecord{
 
 object TableGenerator {
   def GenerateMemRow(sqlContext: SQLContext) : SchemaRDD = {
-    // import sqlContext._
+    import sqlContext._
 
     // create a schema via set the field name.
     val schema = StructType("f s".split(" ").map(
@@ -45,7 +46,7 @@ object TableGenerator {
     val rdd = sparkContext.parallelize(data)
 
     // only case class RDD can call register temp talbe.
-    catalog.registerTable(None, "MyRecords", null)
+    // catalog.registerTable(None, "MyRecords")
     // rdd.registerTempTable("MyRecords")
     // other way to register table.
     // sqlContext.registerRDDAsTable(rdd, "Record")
@@ -61,7 +62,7 @@ object TableGenerator {
     val rdd = sqlContext.sparkContext.parallelize(data)
 
     // only case class RDD can call register temp talbe.
-    rdd.registerTempTable("MyRecords")
+   // rdd.registerTempTable("MyRecords")
     // other way to register table.
     // sqlContext.registerRDDAsTable(rdd, "Record")
   }
@@ -76,7 +77,7 @@ object TableGenerator {
     val rdd = sqlContext.sparkContext.parallelize(data)
 
     // only case class RDD can call register temp talbe.
-    rdd.registerTempTable("MyNumberPairs")
+    // rdd.registerTempTable("MyNumberPairs")
     // other way to register table.
     // sqlContext.registerRDDAsTable(rdd, "Record")
   }

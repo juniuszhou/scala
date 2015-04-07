@@ -1,14 +1,9 @@
 package MyGraphX
 
-import MyGraphX.GraphGenerator
-
 import org.apache.spark.SparkContext
 import org.apache.spark.graphx.Edge
 import org.apache.spark.rdd.RDD
 
-/**
- * Created by junius on 14-12-26.
- */
 object EdgeRddOps {
   def main(args: Array[String]) {
     val sc = new SparkContext("local[4]", "Simple App")

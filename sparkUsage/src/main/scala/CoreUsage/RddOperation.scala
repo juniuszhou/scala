@@ -7,17 +7,12 @@ import org.apache.spark.rdd._
 
 object RddOperation{
   def CallCompute(sc: SparkContext) = {
+    /*
     val rdd = RddGenerator.GenerateNumberRDD(sc)
     val par = rdd.partitions(0)
     val con = new TaskContext {override def addOnCompleteCallback(function0: () => Unit): Unit = ???
 
       override def taskMetrics(): TaskMetrics = null
-
-      override def isCompleted: Boolean = false
-
-      override def isRunningLocally: Boolean = true
-
-      override def isInterrupted: Boolean = false
 
       override def runningLocally(): Boolean = true
 
@@ -33,6 +28,7 @@ object RddOperation{
     }
     val res = rdd.compute(par, con)
     res.foreach(println)
+    */
   }
 
   def CallDistinct(sc: SparkContext) = {
