@@ -1,4 +1,4 @@
-package Hacker
+package HackerRank
 
 import scala.collection.mutable.HashMap
 

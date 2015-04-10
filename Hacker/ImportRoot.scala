@@ -1,4 +1,4 @@
-package Hacker
+package HackerRank
 
 // _root_ represent the absolute path
 

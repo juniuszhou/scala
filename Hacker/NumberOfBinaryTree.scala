@@ -1,4 +1,4 @@
-package Hacker
+package HackerRank
 
 /**
  * Created by juzhou on 3/25/2015.
