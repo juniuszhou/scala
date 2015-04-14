@@ -1,9 +1,12 @@
-package Syntax
+package main.scala
 
-/**
- * Created by juzhou on 3/20/2015.
- */
-case class B()
+object MyCaseClass {
+  def main(args: Array[String]) = {
+    println("hello world")
+  }
+}
+
+// case class B()
 
 /*
 the output of compile case class B.
@@ -29,6 +32,3 @@ public final class B$ extends scala.runtime.AbstractFunction0<B> implements scal
     public java.lang.Object apply();
 }
  */
-class caseClass {
-
-}
