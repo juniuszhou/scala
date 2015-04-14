@@ -4,9 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AkkaUsage/AkkaUsage.iml" filepath="$PROJECT_DIR$/AkkaUsage/AkkaUsage.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hacker/Hacker.iml" filepath="$PROJECT_DIR$/Hacker/Hacker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hacker/Hacker.iml" filepath="$PROJECT_DIR$/Hacker/Hacker.iml" />
       <module fileurl="file://$PROJECT_DIR$/MachineL/MachineL.iml" filepath="$PROJECT_DIR$/MachineL/MachineL.iml" />
       <module fileurl="file://$PROJECT_DIR$/Syntax/Syntax.iml" filepath="$PROJECT_DIR$/Syntax/Syntax.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala.iml" filepath="$PROJECT_DIR$/.idea/modules/scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/breezeUsage/breezeUsage.iml" filepath="$PROJECT_DIR$/breezeUsage/breezeUsage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkaUsage/kafkaUsage.iml" filepath="$PROJECT_DIR$/kafkaUsage/kafkaUsage.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/sparkUsage/sparkUsage.iml" filepath="$PROJECT_DIR$/sparkUsage/sparkUsage.iml" />
     </modules>
