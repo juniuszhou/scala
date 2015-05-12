@@ -2,6 +2,8 @@ package Recommedation
 
 /**
  * http://www.cnblogs.com/breezedeus/archive/2012/04/10/2440488.html
+ *
+ * BM25 Transformation.
 term frequency–inverse document frequency
  */
 object tfidf {
