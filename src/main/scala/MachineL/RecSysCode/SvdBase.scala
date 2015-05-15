@@ -51,7 +51,9 @@ object SvdBase {
 
     val biasUser = Array[Double](m)
     val biasItem = Array[Double](n)
-
+    def globalMean(): Double = {
+      rating.flatMap(arr => arr.map(rate => rate)).sum / (m * n)
+    }
     val mean = globalMean()
     def initBias() = {
       // n items, each indicate how many rate the item got.
@@ -89,9 +91,7 @@ object SvdBase {
       else biasUser(i) = biasUser(i) / itemRatedByUsers(i) + 10)
     }
 
-    def globalMean(): Double = {
-      rating.flatMap(arr => arr.map(rate => rate)).sum / (m * n)
-    }
+
 
     def predictRating(userId: Int, itemId: Int): Double = {
       var sum = 1.0

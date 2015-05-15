@@ -8,10 +8,10 @@ class NavieBayesModel{
 
   }
 
-  def predict(): OutputClass = {
-    val res = new OutputClass
-    res
-  }
+  //def predict(): OutputClass = {
+  //  val res = new OutputClass
+  //  res
+  //}
 }
 object NavieBayes {
   def main (args: Array[String]) {

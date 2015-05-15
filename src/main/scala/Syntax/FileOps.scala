@@ -1,4 +1,4 @@
-import io.Source._
+package Syntax
 
 object FileOps {
   def main(args: Array[String]) {

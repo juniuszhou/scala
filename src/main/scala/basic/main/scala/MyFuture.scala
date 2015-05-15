@@ -1,4 +1,5 @@
-import scala.actors.threadpool.AtomicInteger
+import java.util.concurrent.atomic.AtomicInteger
+
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Promise, ExecutionContext, Await, Future}
 import ExecutionContext.Implicits.global
