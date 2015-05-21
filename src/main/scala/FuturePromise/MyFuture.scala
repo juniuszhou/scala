@@ -1,8 +1,10 @@
+package FuturePromise
+
 import java.util.concurrent.atomic.AtomicInteger
 
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
-import scala.concurrent.{Promise, ExecutionContext, Await, Future}
-import ExecutionContext.Implicits.global
+import scala.concurrent.{Await, ExecutionContext, Future}
 
 object MyFuture{
   def main (args: Array[String]) {

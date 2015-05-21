@@ -1,5 +1,7 @@
-import scala.concurrent.{Promise, ExecutionContext}
-import ExecutionContext.Implicits.global
+package FuturePromise
+
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.{ExecutionContext, Promise}
 
 object MyPromise{
   def getPromise(i: Int) : Promise[Int] = {

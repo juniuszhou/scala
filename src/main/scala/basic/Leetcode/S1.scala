@@ -1,17 +1,14 @@
 package Leetcode
 
-import scala.collection.mutable.HashMap
+import scala.collection.mutable
 
-/**
- * Created by junius on 15-2-26.
- */
 object S1 {
   private class Solution{
     def ifTwoSameVal(a: Array[Int], v: Int): Boolean ={
-      a.filter(i => (i == v)).length > 1
+      a.filter(i => i == v).length > 1
     }
-    def twoSum(a: Array[Int], b: Array[Int], c: Int): Tuple2[Int, Int] ={
-      val m = new HashMap[Int, Int]()
+    def twoSum(a: Array[Int], b: Array[Int], c: Int): (Int, Int) ={
+      val m = mutable.HashMap[Int, Int]()
       var index: Int = 0
       a.foreach{
           i => m.put(i, index)
@@ -24,7 +21,7 @@ object S1 {
           return (index, m.get(gap).get)
       }
 
-      return (0,1)
+      (0,1)
     }
   }
 

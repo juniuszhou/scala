@@ -1,5 +1,6 @@
+package MachineL.DeepL
+
 import scala.util.Random
-import scala.math
 
 class HiddenLayer(val N: Int, val n_in: Int, val n_out: Int, _W: Array[Array[Double]], _b: Array[Double], var rng: Random=null) {
 
