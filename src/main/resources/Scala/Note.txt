@@ -1,0 +1,19 @@
+1. difference between method and function. http://www.cnblogs.com/tiger-xc/p/4323430.html
+def m(a: Int): Int = -a   // this is a method
+val f = (a: Int) => -a      //this is a function
+
+function is FP first class so you can use it anywhere without parameter.
+but method just a type of function, so you must use it with parameter.
+
+how to transmit
+val f2 = m _
+
+2. ???????????????????????
+???????????????
+
+3. foldLeft reduceLeft  ????? foldRight reduceRight?????
+scanLeft
+
+
+
+

@@ -29,16 +29,20 @@ object MutableContainer{
     buf += 1
 
     // List Buffers linked list
+    println("---------------------ListBuffer-----------------------")
     val buf2 = ListBuffer.empty[Int]
 
     buf2 += 1
+    buf2.append(2)
+    println(buf2)
 
     // StringBuilders
     println("---------------------StringBuilder-----------------------")
     val buf3 = new StringBuilder
     buf3 += 'a'
 
-    //Linked Lists
+    //Linked Lists, it is deprecated in new version scala.
+    println("---------------------LinkedList-----------------------")
     val buf4 = new mutable.LinkedList[Int]()
     val buf5 = mutable.LinkedList(1,2,3)
     buf5.append(LinkedList(4,5,6))
@@ -57,21 +61,28 @@ object MutableContainer{
      queue += "a"
 
     // Array Sequences
+    val ass = new mutable.ArraySeq[String](5)
 
-     // Stacks
+
+
+
+
+     // Stacks implemented in queue
 
     // Array Stacks
 
      // Hash Tables
+    //val ht = scala.collection.mutable.HashTable[Int, String]{}
 
     // Hash sets and maps are used just like any other set or map. Here are some simple examples:
 
      val map = scala.collection.mutable.HashMap.empty[Int,String]
           map += (1 -> "make a web site")
+    map.put(2, "make app")
 
       // Weak Hash Maps
-
-      // Concurrent Maps
+    val wMap = scala.collection.mutable.WeakHashMap.empty[Int, String]
+    wMap.put(9,"hello")
 
     // Mutable Bitsets
     val bits = scala.collection.mutable.BitSet.empty

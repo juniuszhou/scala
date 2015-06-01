@@ -5,7 +5,7 @@ object MyConcurrent{
     // concurrent thread-safe lock-free implementation of a hash array mapped trie.
     // it is mutable and support insert and update
     val map = TrieMap(1 -> '1', 2 -> '2')
-    map.map(pair => println(pair._1 + pair._2))
+    map.foreach(pair => println(pair._1 + pair._2))
     //map.put(3) = '3'
     map.update(3, '4')
 

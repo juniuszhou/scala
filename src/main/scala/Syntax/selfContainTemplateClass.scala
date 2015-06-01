@@ -2,8 +2,8 @@ package Syntax
 
 //how to define a data member with the same type as me.
 //or the type is my subtype. in this way, we can do it.
-abstract class parentCont[T <: parentCont] {
-  val mine: T
+abstract class parentCont { //[T <: parentCont] {
+  // val mine: T
 
   //other usage is a data member or method take it as template type.
 }

@@ -30,6 +30,13 @@ object ForUsage {
     // assignment not allowed.
     // arr = new Array[String](1)
 
+    def forYield() = {
+      // for yield, it we loop on list then result is list.
+      // if loop on array then result is array. since it will be translated to map and flatmap.
+      val alist = for(i <- List(0,1,2)) yield i
+      alist.foreach(println)
+    }
+
 
   }
 }

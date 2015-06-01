@@ -1,0 +1,13 @@
+#### link for scala sbt
+http://www.scala-sbt.org/release/tutorial/Manual-Installation.html
+
+download sbt-launch.jar and write wrapper command file.
+
+## sbt file template.
+SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+java $SBT_OPTS -jar `dirname $0`/sbt-launch.jar "$@"
+
+
+
+#### commands
+## run , compile and run main class.

@@ -14,6 +14,7 @@ object ImmutableContainer{
     println()
     lst.take(2).map(print) //get first two items
     println()
+    lst.+:(0).map(print) //add a head item.
 
     //Vector
     /*
