@@ -1,0 +1,5 @@
+###### combination programming with java
+1. For scala default Map is scala's Map and doesn't need declare.
+so if you extends a java class which include Java's Map then you must
+declaim it explicitly.
+

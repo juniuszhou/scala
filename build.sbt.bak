@@ -17,3 +17,22 @@ libraryDependencies += "org.apache.spark" % "spark-sql_2.10" % "1.3.0"
 libraryDependencies += "org.apache.spark" % "spark-streaming_2.10" % "1.3.0"
 
 libraryDependencies += "org.apache.spark" % "spark-mllib_2.10" % "1.3.0"
+
+#### a complex build template.
+https://github.com/miguno/kafka-storm-starter/blob/develop/build.sbt
+
+
+#### install sbt in linux
+wget http://apt.typesafe.com/repo-deb-build-0002.deb
+sudo dpkg -i repo-deb-build-0002.deb
+sudo apt-get update
+sudo apt-get install sbt
+
+#### problems happened in sbt
+there is a lock when sbt analyse the build.sbt and download jar.
+sometimes deadlock if multiply project created and wait for each other.
+
+if you re-create a project, must delete other content in project/out/.idea.
+otherwise old project remains may confuse sbt and scala compiler. report error.
+
+
