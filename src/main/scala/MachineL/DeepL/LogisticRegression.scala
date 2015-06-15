@@ -27,9 +27,9 @@ class LogisticRegression(val N: Int, val n_in: Int, val n_out: Int) {
       dy(i) = y(i) - p_y_given_x(i)
 
       for(j <- 0 until n_in) {
-        W(i)(j) += lr * dy(i) * x(j) / N
+        W(i)(j) += lr * dy(i) * x(j) / N   // update weight
       }
-      b(i) += lr * dy(i) / N
+      b(i) += lr * dy(i) / N    // update intercept.
     }
   }
 
@@ -100,8 +100,8 @@ object LogisticRegression {
     // train
     var epoch: Int = 0
     var i: Int = 0
-    for(epoch <- 0 until n_epochs) {
-      for(i <- 0 until train_N) {
+    for(epoch <- 0 until n_epochs) { // for each iteration
+      for(i <- 0 until train_N) { // for each training data
         classifier.train(train_X(i), train_Y(i), learning_rate)
       }
       // learning_rate *= 0.95

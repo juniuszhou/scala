@@ -1,8 +1,5 @@
 package Syntax
 
-/**
- * Created by juzhou on 4/22/2015.
- */
 object TrySimple {
   def main (args: Array[String]) {
     val a1 = Array[Int](10)
