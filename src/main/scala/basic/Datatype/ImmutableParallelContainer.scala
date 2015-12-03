@@ -8,6 +8,7 @@ object ImmutableParallelContainer{
     //ParHashMap
     val phm = ParHashMap(1 -> 'a', 2 -> 'b')
     phm.get(1)
+    //phm += (3 -> 'c)
 
     println(phm.isParIterable)
 

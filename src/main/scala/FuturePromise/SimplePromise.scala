@@ -15,7 +15,8 @@ object SimplePromise {
       }
     }
     responseToPromise()
-    p success 100
+    //p success 100
+    p failure new Exception
     //
     Thread.sleep(1000)
   }

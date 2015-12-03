@@ -1,0 +1,35 @@
+#### mutable
+
+## Seq
+
+1. indexSeq
+ArraySeq can access array via index and more ops
+Array just wrapper for java []
+ArrayBuffer can drop/remove intermediate item in underlying buffer structure
+StringBuffer for string ops without new a string
+
+2. buffer
+ArrayBuffer
+ListBuffer
+
+3. Stack and SynchronizedStack
+   ArrayStack PriorityQueue SynchronizedPriorityQueue
+
+4. LinearSeq
+MutableList
+Queue   its underlying data structure is two LinkedList. for ops in head and tail.
+SynchronizedQueue
+LinkedList
+DoubleLinkedList
+
+## Set
+HashSet BitSet LinkedHashSet
+
+## Map
+
+
+
+
+
+
+#### immutable

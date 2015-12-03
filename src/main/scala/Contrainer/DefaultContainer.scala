@@ -1,4 +1,4 @@
-package basic.Contrainer
+package Contrainer
 
 import scala.collection.LinearSeq
 import scala.collection.immutable.{SortedMap, SortedSet}

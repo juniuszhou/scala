@@ -40,8 +40,12 @@ object MyPromise{
       case _ => println("got an exception")
     }
 
-    //p1.success(123)
-    p1.failure(new Throwable)
+    p1.success(123)
+
+    // the second call will throw exception. promise can guarantee
+    // the future included just called once.
+    p1.success(234)
+    //p1.failure(new Throwable)
 
     Thread sleep 3000
   }

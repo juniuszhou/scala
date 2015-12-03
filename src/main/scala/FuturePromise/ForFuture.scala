@@ -27,10 +27,10 @@ object ForFuture {
   def main (args: Array[String]) {
     def f: Future[String] = future {
       val b = false
-      if (b) "okok" else {
-        throw new Exception
-      }
+    if (b) "okok" else {
+      throw new Exception
     }
+  }
 
     def chainedFuture() : Unit = {
       val res1 = f

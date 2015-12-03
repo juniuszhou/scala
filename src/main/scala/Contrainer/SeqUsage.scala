@@ -1,4 +1,4 @@
-package basic.Contrainer
+package Contrainer
 
 object SeqUsage {
   def main(args: Array[String]) {

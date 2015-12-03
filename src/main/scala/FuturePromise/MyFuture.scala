@@ -45,8 +45,5 @@ object MyFuture{
     println("Sum of values is " + (Await.result(c1, Duration.Inf) +
       Await.result(c2, Duration.Inf)))
     println("the end")
-
-
-
   }
 }

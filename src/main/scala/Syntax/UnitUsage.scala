@@ -31,11 +31,11 @@ object UnitUsage {
     val opt = Option[String]("abc")
     opt match {
       case None => println("none ")
-      //case Some => println("sth here")
+      case Some(_) => println("sth here")
     }
 
     // iterator of tuple
-    val tup = Tuple3(0,1,2)
+    val tup = Tuple3(2,1,0)
     tup.productIterator.foreach(println)
 
   }
