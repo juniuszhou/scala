@@ -1,5 +1,7 @@
 package basic.ScalaIO
 
+import main.scala
+
 /**
  * Created by juzhou on 7/29/2015.
  */
